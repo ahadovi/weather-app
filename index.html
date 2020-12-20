@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="assets/css/bootstrap-css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="container py-5 my-5">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="weather border rounded p-4 text-center bg-dark text-white">
+                <div class="weather-wrap">
+                    <h2 id="w-city" class="my-2 text-capitalize"></h2>
+                    <h4 id="w-desc" class="my-2 text-capitalize"></h4>
+                    <h2 id="w-temp" class="my-2"></h2>
+                    <img src="" alt="temp icon" id="img-icon" class="img-fluid my-3 bg-light py-2 px-4 rounded">
+                </div>
+                <ul class="w-details mt-4 pl-0">
+                    <li class="humidity bg-success font-weight-bold rounded p-2 my-3"></li>
+                    <li class="pressure bg-success font-weight-bold rounded p-2 my-3"></li>
+                    <li class="wind bg-success font-weight-bold rounded p-2 my-3"></li>
+                </ul>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-warning mt-4" data-toggle="modal" data-target="#locationModal">
+                    Change Location
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="locationModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Change Location</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input type="text" class="form-control" id="searchCity">
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="change-location" class="btn btn-success" data-dismiss="modal">Change</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Bootstrap JS-->
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+
+<!--Custom JS-->
+<script src="assets/js/weather.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

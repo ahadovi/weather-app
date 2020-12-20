@@ -1,0 +1,27 @@
+{
+  "name": "leboudoir-web-app-v1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "npm start",
+    "build-css": "node-sass ./scss/app.scss ./assets/css/style.css --output-style compact --source-map true ",
+    "build-css-minify": "node-sass ./scss/app.scss ./assets/css/style.css --output-style compressed --source-map true ",
+    "watch-scss": "nodemon -e scss -x \"npm run build-css\"",
+    "css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "keywords": [
+    "sass",
+    "html5",
+    "project",
+    "for",
+    "multi",
+    "bank"
+  ],
+  "author": "ashikjs",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.0",
+    "nodemon": "^2.0.2"
+  }
+}

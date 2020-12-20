@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../../scss/app.scss",
+		"../../scss/component/_variables.scss",
+		"../../scss/component/_pages.scss",
+		"../../scss/component/_modal.scss"
+	],
+	"names": [],
+	"mappings": "AEAA,AACE,EADA,CACA,EAAE,CAAC,EACD,UAAU,EAAE,IAAI,GACjB"
+}
